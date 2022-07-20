@@ -67,5 +67,17 @@ namespace Tests {
 
             Assert.Equal(indexes, new int[]{0, 3}); 
         }
+
+
+        
+        [Fact]
+        public void IndexesOfTest3()
+        {
+            UnitTest1 finder = new UnitTest1();
+            
+            var indexes = finder.IndexesOf("мокмолооломко моло молооко молоко", "молоко");
+
+            Assert.Equal(indexes, new int[]{27}); 
+        }
     }
 }
